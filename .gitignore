@@ -1,0 +1,6 @@
+*.har
+*.har.*
+.env
+.env.*
+node_modules/
+private/
