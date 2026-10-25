@@ -1,4 +1,4 @@
-/* XiaoYuan Search Loon ad filter v0.1.0. No network, storage or credential logging. */
+/* XiaoYuan Search Loon ad filter v0.2.0. No network, storage or credential logging. */
 (function () {
   'use strict';
   var endpoint = /^https:\/\/xyst\.yuanfudao\.com\/solar-activity\/iphone\/(?:activity-open\/2|activity\/2\/\d+)\/?(?:\?|$)/i;

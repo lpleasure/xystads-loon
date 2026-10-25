@@ -1,8 +1,8 @@
 {
   "name": "xystads-loon",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
-    "test": "node --test tests/filter.test.cjs"
+    "test": "node --test tests/filter.test.cjs tests/splash.test.cjs"
   }
 }

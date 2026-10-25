@@ -1,10 +1,11 @@
 #!name=小猿搜题去推广
-#!desc=过滤搜题结果会员横幅及已确认营销弹窗；保留首页学习功能。需开启脚本与 MITM。
+#!desc=拦截开屏/首页活动同步，过滤搜题结果会员横幅及已确认营销弹窗；保留首页学习功能。需开启脚本与 MITM。
 #!author=lpleasure
 #!homepage=https://github.com/lpleasure/xystads-loon
-#!date=2026-10-25
+#!date=2026-10-26
 
 [Script]
+http-request ^https:\/\/xyst\.yuanfudao\.com\/solar-sync\/iphone\/sync\/?(?:\?|$) script-path=https://raw.githubusercontent.com/lpleasure/xystads-loon/main/scripts/xystsplash.js,requires-body=true,timeout=10,tag=小猿搜题去开屏
 http-response ^https:\/\/xyst\.yuanfudao\.com\/solar-activity\/iphone\/(?:activity-open\/2|activity\/2\/\d+)\/?(?:\?|$) script-path=https://raw.githubusercontent.com/lpleasure/xystads-loon/main/scripts/xystads.js,requires-body=true,timeout=10,tag=小猿搜题去推广
 
 [MITM]
